@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>♡ mi foro personal ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <p class="deco">✧･ﾟ: *✧･ﾟ:* &nbsp; ₊˚⊹ ♡ ⊹˚₊ &nbsp; *:･ﾟ✧*:･ﾟ✧</p>
+  <h1>mi foro personal</h1>
+  <p class="sub" id="kao">(◕‿◕✿) bienvenid@ a mi rinconcito de internet</p>
+
+  <div class="controls">
+    <button id="kaoBtn" type="button">cambiar carita ✿</button>
+    <button id="themeBtn" type="button" aria-pressed="false">☾ modo oscuro</button>
+  </div>
+</header>
+
+<nav id="tabs" aria-label="categorías"></nav>
+
+<main>
+
+  <!-- PRESENTACIÓN -->
+  <aside class="board about" id="about">
+    <div class="about-avatar">
+  🎀
+  <img src="img/pia.jpg" alt="Pía" onerror="this.remove()">
+</div>
+    <div>
+      <h2>♡ quién soy ♡</h2>
+      <p>
+        ¡Hola! Soy <strong>Pía</strong> (◕‿◕✿). Este es mi rinconcito de internet,
+        donde guardo todo lo que me gusta: anime, series, juegos, música y
+        cositas de la vieja internet. Pasá, chusmeá y quedate un ratito ♡
+      </p>
+      <ul class="about-list">
+        <li>Me llamo: Pía, aunque algunos de mis amigos me dicen Luciel, llamame como quieras jeje </li>
+        <li>Estudio en la Esc.Tecnica Carmen Molina de Llano, gracias a eso hago esta pagina muajaja</li>
+        <li>Me gusta mucho comer, ver alguna serie, tomar algo y estar con mis amigos y mi novio uwu, nada muy interesante</li>
+      </ul>
+      <div class="stickers">
+        <span>🌸 anime</span>
+        <span>📺 series</span>
+        <span>🎮 juegos</span>
+        <span>🎧 música</span>
+        <span>💿 internet viejo</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- SPOTIFY: PLAYLIST -->
+  <aside class="board player" id="ytBox">
+    <h2>♪ ahora suena ♪</h2>
+    <p>mi playlist (◕‿◕✿)</p>
+    <div class="spotify-player">
+      <iframe
+       src="https://open.spotify.com/embed/playlist/6Re2qvJeyCPVUOdYF6MU3z?"
+        width="100%" height="352" frameborder="0"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"></iframe>
+    </div>
+  </aside>
+
+  <p id="count" class="count"></p>
+  <section id="posts" class="posts"></section>
+
+  <aside class="board archaeology-board">
+    <h2>★ internet archaeology ★</h2>
+    <p>pequeños fósiles del internet que alguna vez fue (っ˘ω˘ς)</p>
+    <div class="arch-grid" id="arch"></div>
+  </aside>
+
+  <aside class="board">
+    <h2>♡ wishlist ♡</h2>
+    <p>lo que quiero ver / escuchar pronto ( ˘▽˘)っ</p>
+    <div class="chips" id="wish"></div>
+  </aside>
+
+</main>
+
+<footer>ʕ•ᴥ•ʔ hecho con cariño por Pía · volvé pronto ♡</footer>
+
+<div id="wikiModal" class="wiki-modal" aria-hidden="true">
+  <div class="wiki-backdrop" id="wikiBackdrop"></div>
+  <article class="wiki-window" role="dialog" aria-modal="true" aria-labelledby="wikiTitle">
+    <button class="wiki-close" id="wikiClose" type="button" aria-label="cerrar">×</button>
+    <div id="wikiContent"></div>
+  </article>
+</div>
+<script>
+  window.addEventListener("error", e => {
+    document.body.insertAdjacentHTML("afterbegin",
+      `<pre style="background:#fff;color:#c00;padding:12px;margin:0;white-space:pre-wrap;z-index:99999;position:relative">⚠ ${e.message} (archivo: ${e.filename}, línea ${e.lineno})</pre>`);
+  });
+</script>
+<script src="script.js"></script>
+</body>
+</html>

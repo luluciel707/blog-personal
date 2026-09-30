@@ -1,0 +1,1661 @@
+/* =========================================================
+   ♡ MI FORO PERSONAL — ESTILOS ♡
+   ========================================================= */
+
+:root {
+
+  --bg: #fff0f6;
+  --pink: #ff9ec7;
+  --pink2: #ffd1e6;
+
+  --lav: #d9c8ff;
+  --mint: #c4f2df;
+  --butter: #fff1b8;
+
+  --ink: #6b3f5e;
+  --soft-ink: #93627f;
+
+  --card: #fffafc;
+  --white: #ffffff;
+
+  --shadow:
+    0 8px 0 rgba(107, 63, 94, .08),
+    0 12px 25px rgba(107, 63, 94, .10);
+
+  --radius: 24px;
+}
+
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+[data-theme="dark"] {
+
+  --bg: #1d1428;
+
+  --pink: #ff8fc0;
+  --pink2: #3b2652;
+
+  --lav: #6f5aa8;
+  --mint: #2f5a4b;
+  --butter: #4d4126;
+
+  --ink: #f6dff0;
+  --soft-ink: #ddb7d0;
+
+  --card: #2a1c39;
+  --white: #332343;
+
+  --shadow:
+    0 8px 0 rgba(0, 0, 0, .18),
+    0 12px 25px rgba(0, 0, 0, .25);
+}
+
+
+/* =========================================================
+   GENERAL
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+
+  margin: 0;
+
+  font-family: "Quicksand", sans-serif;
+
+  color: var(--ink);
+  background-color: var(--bg);
+
+  background-image:
+    radial-gradient(
+      var(--pink2) 1.5px,
+      transparent 1.5px
+    );
+
+  background-size: 22px 22px;
+
+  transition:
+    background-color .3s ease,
+    color .3s ease;
+}
+
+button {
+  font-family: inherit;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+header {
+
+  text-align: center;
+
+  padding:
+    35px
+    20px
+    25px;
+
+  position: relative;
+}
+
+.deco {
+
+  margin: 0 0 10px;
+
+  font-size: 18px;
+
+  color: var(--pink);
+
+  letter-spacing: 2px;
+}
+
+h1 {
+
+  margin: 0;
+
+  font-family: "Fredoka", sans-serif;
+
+  font-size: clamp(2.5rem, 8vw, 5rem);
+
+  color: var(--pink);
+
+  text-shadow:
+    3px 3px 0 var(--lav),
+    6px 6px 0 rgba(255,255,255,.7);
+
+  letter-spacing: 1px;
+}
+
+.sub {
+
+  margin:
+    12px
+    auto
+    20px;
+
+  max-width: 600px;
+
+  font-size: 16px;
+
+  color: var(--soft-ink);
+}
+
+
+/* =========================================================
+   BOTONES DEL HEADER
+   ========================================================= */
+
+.controls {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+}
+
+.controls button {
+
+  border:
+    2px solid
+    var(--pink);
+
+  background:
+    var(--card);
+
+  color:
+    var(--ink);
+
+  padding:
+    9px
+    15px;
+
+  border-radius:
+    999px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    transform .2s ease,
+    background .2s ease,
+    box-shadow .2s ease;
+}
+
+.controls button:hover {
+
+  transform:
+    translateY(-3px)
+    rotate(-1deg);
+
+  background:
+    var(--pink2);
+
+  box-shadow:
+    0 5px 0
+    rgba(107, 63, 94, .08);
+}
+
+.musicmsg {
+
+  min-height: 20px;
+
+  margin:
+    10px
+    0
+    0;
+
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   CATEGORÍAS
+   ========================================================= */
+
+nav {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  padding:
+    10px
+    20px
+    25px;
+}
+
+nav button {
+
+  border:
+    2px solid
+    var(--pink);
+
+  background:
+    var(--card);
+
+  color:
+    var(--ink);
+
+  padding:
+    8px
+    13px;
+
+  border-radius:
+    999px;
+
+  cursor: pointer;
+
+  font-weight: 700;
+
+  transition:
+    .2s ease;
+}
+
+nav button:hover,
+nav button[aria-pressed="true"] {
+
+  background:
+    var(--pink);
+
+  color:
+    white;
+
+  transform:
+    translateY(-2px);
+}
+
+
+/* =========================================================
+   CONTENIDO PRINCIPAL
+   ========================================================= */
+
+main {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+/* =========================================================
+   BOARDS
+   ========================================================= */
+
+.board {
+
+  margin:
+    20px
+    0;
+
+  padding:
+    22px;
+
+  background:
+    var(--card);
+
+  border:
+    3px solid
+    var(--pink);
+
+  border-radius:
+    var(--radius);
+
+  box-shadow:
+    var(--shadow);
+}
+
+.board h2 {
+
+  margin-top: 0;
+
+  font-family:
+    "Fredoka",
+    sans-serif;
+
+  font-size: 25px;
+
+  color:
+    var(--pink);
+}
+
+.board p {
+
+  line-height:
+    1.6;
+}
+
+
+/* =========================================================
+   MUSIC PLAYER
+   ========================================================= */
+
+.player {
+
+  text-align: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--card),
+      var(--pink2)
+    );
+}
+
+.music-buttons {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 9px;
+
+  margin:
+    15px
+    0;
+}
+
+.music-buttons button {
+
+  border:
+    2px solid
+    var(--pink);
+
+  background:
+    var(--card);
+
+  color:
+    var(--ink);
+
+  padding:
+    8px
+    14px;
+
+  border-radius:
+    999px;
+
+  cursor: pointer;
+
+  font-weight: 700;
+
+  transition:
+    .2s ease;
+}
+
+.music-buttons button:hover {
+
+  background:
+    var(--pink);
+
+  color:
+    white;
+
+  transform:
+    translateY(-2px);
+}
+
+.music-player {
+
+  width: 100%;
+
+  overflow: hidden;
+
+  border-radius:
+    17px;
+}
+
+.music-player iframe {
+
+  display: block;
+
+  width: 100%;
+
+  border: 0;
+
+  border-radius:
+    17px;
+}
+
+.music-placeholder {
+
+  padding:
+    30px
+    15px;
+
+  background:
+    var(--pink2);
+
+  border:
+    2px dashed
+    var(--pink);
+
+  border-radius:
+    17px;
+
+  font-weight:
+    700;
+}
+
+
+/* =========================================================
+   CONTADOR
+   ========================================================= */
+
+.count {
+
+  text-align:
+    center;
+
+  margin:
+    25px
+    0;
+
+  font-size:
+    14px;
+
+  font-weight:
+    700;
+
+  color:
+    var(--soft-ink);
+}
+
+
+/* =========================================================
+   POSTS
+   ========================================================= */
+
+.posts {
+ display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.post {
+
+  position:
+    relative;
+
+  overflow:
+    hidden;
+
+  background:
+    var(--card);
+
+  border:
+    3px solid
+    var(--pink);
+
+  border-radius:
+    var(--radius);
+
+  box-shadow:
+    var(--shadow);
+
+  cursor:
+    pointer;
+
+  outline:
+    none;
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease;
+}
+
+.post:nth-child(4n + 2) {
+  border-color:
+    var(--lav);
+}
+
+.post:nth-child(4n + 3) {
+  border-color:
+    var(--mint);
+}
+
+.post:nth-child(4n + 4) {
+  border-color:
+    var(--butter);
+}
+
+.post:hover {
+
+  transform:
+    translateY(-7px)
+    rotate(-.5deg);
+
+  box-shadow:
+    0 12px 0
+    rgba(107, 63, 94, .08),
+    0 18px 30px
+    rgba(107, 63, 94, .14);
+}
+
+.post:focus-visible {
+
+  outline:
+    4px solid
+    var(--pink);
+
+  outline-offset:
+    4px;
+}
+
+
+/* =========================================================
+   IMAGEN DE LAS TARJETAS
+   ========================================================= */
+
+.pic {
+
+  position:
+    relative;
+
+  width:
+    100%;
+
+  height:
+    190px;
+
+  overflow:
+    hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--pink2),
+      var(--lav)
+    );
+}
+
+.pic img {
+
+  width:
+    100%;
+
+  height:
+    100%;
+
+  object-fit:
+    cover;
+
+  display:
+    block;
+}
+
+.pic-placeholder {
+
+  width:
+    100%;
+
+  height:
+    100%;
+
+  display:
+    flex;
+
+  justify-content:
+    center;
+
+  align-items:
+    center;
+
+  font-size:
+    65px;
+}
+
+
+/* =========================================================
+   TAGS
+   ========================================================= */
+
+.tag {
+
+  position:
+    absolute;
+
+  top:
+    12px;
+
+  left:
+    12px;
+
+  padding:
+    6px
+    10px;
+
+  border-radius:
+    999px;
+
+  background:
+    var(--card);
+
+  border:
+    2px solid
+    var(--pink);
+
+  font-size:
+    12px;
+
+  font-weight:
+    700;
+
+  box-shadow:
+    0 3px 8px
+    rgba(0,0,0,.08);
+}
+
+
+/* =========================================================
+   CUERPO DE POST
+   ========================================================= */
+
+.body {
+
+  padding:
+    18px;
+}
+
+.body h3 {
+
+  margin:
+    0
+    0
+    8px;
+
+  font-family:
+    "Fredoka",
+    sans-serif;
+
+  font-size:
+    23px;
+
+  line-height:
+    1.15;
+}
+
+.body p {
+
+  line-height:
+    1.55;
+
+  font-size:
+    14px;
+}
+
+.body small {
+
+  display:
+    inline-block;
+
+  margin-top:
+    7px;
+
+  padding:
+    5px
+    9px;
+
+  border-radius:
+    999px;
+
+  background:
+    var(--pink2);
+
+  font-weight:
+    700;
+}
+
+
+/* =========================================================
+   ESTRELLAS
+   ========================================================= */
+
+.stars {
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  gap:
+    8px;
+
+  color:
+    #f4a62a;
+
+  font-size:
+    14px;
+
+  margin:
+    7px
+    0;
+}
+
+.stars span {
+
+  color:
+    var(--soft-ink);
+
+  font-weight:
+    700;
+}
+
+
+/* =========================================================
+   INTERNET ARCHAEOLOGY
+   ========================================================= */
+
+.arch-grid {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(
+        140px,
+        1fr
+      )
+    );
+
+  gap:
+    12px;
+}
+
+.arch-card {
+
+  padding:
+    16px;
+
+  text-align:
+    center;
+
+  background:
+    var(--pink2);
+
+  border:
+    2px solid
+    var(--pink);
+
+  border-radius:
+    18px;
+
+  cursor:
+    pointer;
+
+  transition:
+    .2s ease;
+}
+
+.arch-card:hover {
+
+  transform:
+    translateY(-4px)
+    rotate(1deg);
+
+  background:
+    var(--lav);
+}
+
+.arch-icon {
+
+  display:
+    block;
+
+  font-size:
+    35px;
+
+  margin-bottom:
+    7px;
+}
+
+.arch-title {
+
+  font-weight:
+    700;
+
+  font-size:
+    14px;
+}
+
+
+/* =========================================================
+   WISHLIST
+   ========================================================= */
+
+.chips {
+
+  display:
+    flex;
+
+  flex-wrap:
+    wrap;
+
+  gap:
+    9px;
+}
+
+.chips span {
+
+  padding:
+    8px
+    13px;
+
+  border:
+    2px solid
+    var(--pink);
+
+  background:
+    var(--pink2);
+
+  border-radius:
+    999px;
+
+  font-size:
+    14px;
+
+  font-weight:
+    700;
+
+  transition:
+    .2s ease;
+}
+
+.chips span:hover {
+
+  transform:
+    translateY(-2px)
+    rotate(-1deg);
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+
+  text-align:
+    center;
+
+  padding:
+    35px
+    20px;
+
+  color:
+    var(--soft-ink);
+
+  font-size:
+    14px;
+}
+
+
+/* =========================================================
+   MINI WIKI
+   ========================================================= */
+
+.wiki-modal {
+
+  position:
+    fixed;
+
+  inset:
+    0;
+
+  z-index:
+    9999;
+
+  display:
+    none;
+
+  justify-content:
+    center;
+
+  align-items:
+    center;
+
+  padding:
+    20px;
+}
+
+.wiki-modal.open {
+
+  display:
+    flex;
+}
+
+.wiki-backdrop {
+
+  position:
+    absolute;
+
+  inset:
+    0;
+
+  background:
+    rgba(35, 18, 43, .68);
+
+  backdrop-filter:
+    blur(8px);
+}
+
+.wiki-window {
+
+  position:
+    relative;
+
+  z-index:
+    2;
+
+  width:
+    min(
+      850px,
+      100%
+    );
+
+  max-height:
+    90vh;
+
+  overflow-y:
+    auto;
+
+  padding:
+    28px;
+
+  background:
+    var(--card);
+
+  border:
+    4px solid
+    var(--pink);
+
+  border-radius:
+    28px;
+
+  box-shadow:
+    0 20px 60px
+    rgba(0,0,0,.25);
+}
+
+.wiki-close {
+
+  position:
+    sticky;
+
+  float:
+    right;
+
+  top:
+    0;
+
+  z-index:
+    5;
+
+  width:
+    40px;
+
+  height:
+    40px;
+
+  border:
+    2px solid
+    var(--pink);
+
+  border-radius:
+    50%;
+
+  background:
+    var(--card);
+
+  color:
+    var(--ink);
+
+  font-size:
+    27px;
+
+  line-height:
+    1;
+
+  cursor:
+    pointer;
+
+  transition:
+    .2s ease;
+}
+
+.wiki-close:hover {
+
+  background:
+    var(--pink);
+
+  color:
+    white;
+
+  transform:
+    rotate(8deg);
+}
+
+
+/* =========================================================
+   WIKI HEADER
+   ========================================================= */
+
+.wiki-header {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    210px
+    1fr;
+
+  gap:
+    22px;
+
+  align-items:
+    center;
+
+  margin-bottom:
+    25px;
+}
+
+.wiki-cover,
+.wiki-placeholder {
+
+  width:
+    210px;
+
+  height:
+    270px;
+
+  object-fit:
+    cover;
+
+  border-radius:
+    20px;
+
+  border:
+    3px solid
+    var(--pink);
+
+  box-shadow:
+    7px 7px 0
+    var(--lav);
+}
+
+.wiki-placeholder {
+
+  display:
+    flex;
+
+  justify-content:
+    center;
+
+  align-items:
+    center;
+
+  font-size:
+    75px;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--pink2),
+      var(--lav)
+    );
+}
+
+.wiki-type {
+
+  display:
+    inline-block;
+
+  padding:
+    6px
+    10px;
+
+  background:
+    var(--pink2);
+
+  border:
+    2px solid
+    var(--pink);
+
+  border-radius:
+    999px;
+
+  font-size:
+    12px;
+
+  font-weight:
+    700;
+}
+
+.wiki-title {
+
+  margin:
+    10px
+    0;
+
+  font-family:
+    "Fredoka",
+    sans-serif;
+
+  font-size:
+    clamp(
+      30px,
+      5vw,
+      46px
+    );
+
+  line-height:
+    1.05;
+}
+
+.wiki-rating {
+
+  margin:
+    8px
+    0;
+
+  color:
+    #f4a62a;
+
+  font-weight:
+    700;
+}
+
+.wiki-genres {
+
+  display:
+    flex;
+
+  flex-wrap:
+    wrap;
+
+  gap:
+    7px;
+}
+
+.wiki-genre {
+
+  padding:
+    5px
+    9px;
+
+  border-radius:
+    999px;
+
+  background:
+    var(--mint);
+
+  font-size:
+    12px;
+
+  font-weight:
+    700;
+}
+
+
+/* =========================================================
+   WIKI SECCIONES
+   ========================================================= */
+
+.wiki-section {
+
+  margin:
+    22px
+    0;
+
+  padding:
+    18px;
+
+  background:
+    var(--pink2);
+
+  border-radius:
+    20px;
+
+  border:
+    2px solid
+    rgba(255, 158, 199, .55);
+}
+
+.wiki-section h3 {
+
+  margin-top:
+    0;
+
+  font-family:
+    "Fredoka",
+    sans-serif;
+
+  font-size:
+    22px;
+}
+
+.wiki-description {
+
+  line-height:
+    1.75;
+
+  margin-bottom:
+    0;
+}
+
+.wiki-list {
+
+  margin:
+    0;
+
+  padding-left:
+    22px;
+
+  line-height:
+    1.8;
+}
+
+
+/* =========================================================
+   PERSONAJES
+   ========================================================= */
+
+.character-grid {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(
+        105px,
+        1fr
+      )
+    );
+
+  gap:
+    13px;
+}
+
+.character {
+
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  align-items:
+    center;
+
+  gap:
+    8px;
+
+  padding:
+    12px;
+
+  text-align:
+    center;
+
+  background:
+    var(--card);
+
+  border:
+    2px solid
+    var(--pink);
+
+  border-radius:
+    18px;
+
+  font-weight:
+    700;
+
+  transition:
+    .2s ease;
+}
+
+.character:hover {
+
+  transform:
+    translateY(-5px)
+    rotate(-1deg);
+}
+
+.character img,
+.character-icon {
+
+  width:
+    68px;
+
+  height:
+    68px;
+
+  object-fit:
+    cover;
+
+  border-radius:
+    50%;
+
+  border:
+    3px solid
+    var(--white);
+
+  box-shadow:
+    0 4px 10px
+    rgba(0,0,0,.12);
+}
+
+.character-icon {
+
+  display:
+    flex;
+
+  justify-content:
+    center;
+
+  align-items:
+    center;
+
+  background:
+    var(--lav);
+
+  font-size:
+    30px;
+}
+
+
+/* =========================================================
+   RINCÓN PERSONAL
+   ========================================================= */
+
+.personal-section {
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--pink2),
+      var(--lav)
+    );
+}
+
+.personal-section p {
+
+  line-height:
+    1.7;
+}
+
+
+/* =========================================================
+   SCROLLBAR DE WIKI
+   ========================================================= */
+
+.wiki-window::-webkit-scrollbar {
+  width:
+    10px;
+}
+
+.wiki-window::-webkit-scrollbar-track {
+
+  background:
+    var(--pink2);
+
+  border-radius:
+    999px;
+}
+
+.wiki-window::-webkit-scrollbar-thumb {
+
+  background:
+    var(--pink);
+
+  border-radius:
+    999px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  header {
+    padding-top:
+      25px;
+  }
+
+  .wiki-header {
+
+    grid-template-columns:
+      1fr;
+
+    text-align:
+      center;
+  }
+
+  .wiki-cover,
+  .wiki-placeholder {
+
+    margin:
+      auto;
+  }
+
+  .wiki-genres {
+
+    justify-content:
+      center;
+  }
+
+  .wiki-rating {
+
+    text-align:
+      center;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  main {
+
+    width:
+      min(
+        100% - 18px,
+        1200px
+      );
+  }
+
+  .posts {
+
+    grid-template-columns:
+      1fr;
+  }
+
+  .board {
+
+    padding:
+      17px;
+  }
+
+  .wiki-window {
+
+    padding:
+      20px;
+
+    max-height:
+      94vh;
+  }
+
+  .wiki-cover,
+  .wiki-placeholder {
+
+    width:
+      170px;
+
+    height:
+      220px;
+  }
+
+  h1 {
+
+    font-size:
+      2.8rem;
+  }
+}
+
+
+/* =========================================================
+   REDUCIR ANIMACIONES SI EL USUARIO LO PREFIERE
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+
+    scroll-behavior:
+      auto !important;
+
+    transition:
+      none !important;
+  }
+}
+.spotify-player {
+  margin-top: 15px;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.spotify-player iframe {
+  display: block;
+  width: 100%;
+  border: none;
+}
+/* ===== CUTECORE EXTRA ===== */
+body {
+  background-image:
+    radial-gradient(var(--pink2) 2px, transparent 2px),
+    radial-gradient(var(--lav) 1.5px, transparent 1.5px);
+  background-size: 26px 26px, 38px 38px;
+  background-position: 0 0, 13px 13px;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='28' height='28'><text y='22' font-size='22'>🩷</text></svg>") 4 4, auto;
+}
+
+h1::before { content: "✦ "; color: var(--lav); }
+h1::after  { content: " ✦"; color: var(--lav); }
+
+.deco { animation: twinkle 2.4s ease-in-out infinite; }
+@keyframes twinkle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%      { opacity: .55; transform: scale(1.04); }
+}
+
+.board, .post { border-style: dashed; }
+.board { position: relative; }
+.board::before {
+  content: "🎀"; position: absolute; top: -18px; left: 18px;
+  font-size: 28px; transform: rotate(-12deg);
+}
+.board::after {
+  content: "✧"; position: absolute; top: -12px; right: 22px;
+  font-size: 24px; color: var(--pink);
+}
+.board h2::after { content: " ♡"; }
+
+.controls button, nav button {
+  box-shadow: 0 4px 0 rgba(255, 158, 199, .45);
+}
+.controls button:active, nav button:active { transform: translateY(2px); box-shadow: none; }
+
+.post:hover { animation: wiggle .45s ease; }
+@keyframes wiggle {
+  0%, 100% { rotate: 0deg; } 30% { rotate: -1.2deg; } 70% { rotate: 1.2deg; }
+}
+.tag { background: var(--pink2); }
+
+/* PRESENTACIÓN */
+.about { display: grid; grid-template-columns: 150px 1fr; gap: 22px; align-items: center; }
+.about-avatar {
+  width: 150px; height: 150px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; font-size: 64px;
+  background: linear-gradient(135deg, var(--pink2), var(--lav));
+  border: 4px solid var(--white);
+  box-shadow: 0 0 0 3px var(--pink), 6px 6px 0 var(--lav);
+}
+.about h2 { margin-bottom: 6px; }
+.about-list { list-style: none; padding: 0; margin: 12px 0 0; display: grid; gap: 6px; }
+.about-list li::before { content: "♡ "; color: var(--pink); }
+.stickers { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.stickers span {
+  padding: 6px 12px; border-radius: 999px; background: var(--mint);
+  font-size: 13px; font-weight: 700; transform: rotate(-2deg);
+}
+.stickers span:nth-child(even) { background: var(--butter); transform: rotate(2deg); }
+
+@media (max-width: 600px) {
+  .about { grid-template-columns: 1fr; text-align: center; }
+  .about-avatar { margin: auto; }
+  .stickers { justify-content: center; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; }
+}
+/* ===== CURSOR PIXEL ===== */
+html, body {
+  cursor: url("cursors/cursor-flecha.svg") 1 1, auto;
+}
+
+a, button, .post, .arch-card, .wiki-close, .chips span {
+  cursor: url("cursors/cursor-gatito.svg") 14 12, pointer !important;
+}
+.character-icon { position: relative; overflow: hidden; }
+
+.character-icon img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: none;
+}
+.about-avatar { position: relative; overflow: hidden; }
+
+.about-avatar img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
