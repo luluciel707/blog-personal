@@ -29,7 +29,7 @@ const DATA = [
     emoji: "🧱",
     image: "",
     description:
-      "Un anime que empieza con gigantes comiéndose gente y termina haciendo que una persona necesite sentarse en silencio durante veinte minutos para procesar todo lo que acaba de pasar.",
+      "Es de mis animes favoritos:3, realmente pienso que es muy interesantes, porfavor miratelo, vale la pena, basicamente trata d titanes q comen gente y se va desarrollando la trama a partir del amor uwu (no)",
     characters: [
       ["Eren Yeager", "🪽"],
       ["Mikasa Ackerman", "⚔️"],
