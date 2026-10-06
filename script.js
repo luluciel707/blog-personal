@@ -39,11 +39,11 @@ const DATA = [
     guide: [
       "Las murallas protegen a la humanidad.",
       "Los titanes son muchísimo más importantes de lo que parecen.",
-      "La historia se va poniendo cada vez más complicada.",
+      "PRESTEN MUCHISIMA ATENCION A LOS DETALLES",
       "Prepararse emocionalmente."
     ],
     curiosities: [
-      "La serie está llena de pistas que cobran sentido muchísimo después.",
+      "La serie está llena de referencias al arte, amor y contiene muchisimos detalles, asi tambien tiene muchas narrativas uwu",
       "Los personajes tienen historias bastante profundas."
     ]
   },
@@ -68,7 +68,6 @@ const DATA = [
       "Entrar a la clase 3-E.",
       "Aprender.",
       "Intentar matar a Koro-sensei.",
-      "Terminar queriéndolo demasiado."
     ],
     curiosities: [
       "Koro-sensei tiene una velocidad de Mach 20.",
@@ -85,7 +84,7 @@ const DATA = [
     emoji: "⭐",
     image: "",
     description:
-      "Hombres musculosos, poses imposibles, poderes rarísimos y frases que se te quedan pegadas en la cabeza. Es literalmente JoJo.",
+      "holq, no hay contexto. Es literalmente JoJo.",
     characters: [
       ["Jonathan Joestar", "💪"],
       ["Joseph Joestar", "🥊"],
@@ -95,11 +94,11 @@ const DATA = [
     guide: [
       "Cada parte tiene protagonistas diferentes.",
       "Los Stands aparecen más adelante.",
-      "Las poses son obligatorias espiritualmente."
+      "Las poses son obligatorias espiritualmente XD."
     ],
     curiosities: [
-      "La serie está inspirada en muchísimas referencias musicales y culturales.",
-      "Cada parte tiene una identidad visual bastante distinta."
+      "La serie está inspirada en muchísimas referencias musicales y culturales del autor uwu.",
+      "Cada parte tiene una identidad visual."
     ]
   },
 
@@ -112,7 +111,7 @@ const DATA = [
     emoji: "🌿",
     image: "",
     description:
-      "Maomao solo quería vivir tranquila estudiando venenos y medicamentos, pero terminó resolviendo misterios dentro del palacio imperial. Una reina del chisme científico.",
+      "Pequeña bro tiene una hiperfijacion con las plantas y termino sirviendo en el imperio chino",
     characters: [
       ["Maomao", "🌿"],
       ["Jinshi", "💜"],
@@ -120,13 +119,13 @@ const DATA = [
     ],
     guide: [
       "Seguir las pistas.",
-      "No confiar en las apariencias.",
-      "Observar a Maomao resolverlo todo.",
+      "JINSHI SAMAAA.",
+      "Analizar como Maomao poco a poco comprende mejor sus sentimientos uwu.",
       "Disfrutar del drama del palacio."
     ],
     curiosities: [
       "Maomao tiene una obsesión bastante particular con los venenos.",
-      "La historia combina medicina, misterio y política de palacio."
+      "La historia combina medicina, misterio y mucha polîtica!!."
     ]
   },
 
@@ -147,7 +146,6 @@ const DATA = [
     ],
     guide: [
       "Conocer los siete misterios.",
-      "No meterse donde no corresponde.",
       "Ignorar ese consejo.",
       "Descubrir los secretos de Hanako."
     ],
